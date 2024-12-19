@@ -31,7 +31,7 @@ Successfully processed billions of triangle pairs in under a second, demonstrati
 
 # Advisors
 - **Dr. Prof. Fusheng Wang**
-- ** Ms. Lu Chen**
+- **Ms. Lu Chen**
 
 ## References
 - Oren Tropp, Ayellet Tal, Ilan Shimshoni: A fast triangle to triangle intersection test for collision detection. Computer Animation Virtual Worlds 17(50), 527–535 (2006).
