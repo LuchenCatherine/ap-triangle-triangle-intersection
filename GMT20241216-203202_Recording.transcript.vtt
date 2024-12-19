@@ -1,0 +1,870 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:02.050
+Shreyas Habade: Yeah, I've started the recording.
+
+2
+00:00:02.050 --> 00:00:02.514
+Lu Chen: Okay.
+
+3
+00:00:10.490 --> 00:00:17.530
+Lu Chen: special. So there is a misspell spell in this.
+
+4
+00:00:17.530 --> 00:00:18.250
+Sarthak Madaan: So.
+
+5
+00:00:18.250 --> 00:00:18.710
+Lu Chen: Asian.
+
+6
+00:00:21.860 --> 00:00:22.255
+Sarthak Madaan: Okay.
+
+7
+00:00:49.780 --> 00:00:50.420
+Lu Chen: Okay.
+
+8
+00:00:50.420 --> 00:00:51.080
+Lu Chen: Okay.
+
+9
+00:00:51.080 --> 00:01:07.549
+Sarthak Madaan: Yeah. So Hello, Ruchan. Very good afternoon. So our project is about 3D special database acceleration. We are leveraging, trying to leverage Gpus and trying to explore multiple cpus as well for this project. So I myself and my teammates are
+
+10
+00:01:08.150 --> 00:01:14.000
+Sarthak Madaan: Shreyas, and under your guidance we are doing this project and under the advisory of Professor Fushang Vac.
+
+11
+00:01:16.200 --> 00:01:17.100
+Sarthak Madaan: So
+
+12
+00:01:17.800 --> 00:01:46.300
+Sarthak Madaan: this research basically explores determining the intersection of triangles in the 3D space and the Algorithm that we are trying to leverage. Here is Thomas Mueller, so our mode of programming will be in C plus, plus, and we are trying to use for the performance. We are to enhance performance. Basically, we are trying to leverage multiple cpus and also exploring Gpu parallelization by leveraging the cuda programming.
+
+13
+00:01:46.300 --> 00:01:56.070
+Sarthak Madaan: So this project can be used in fields like autonomous driving, gaming, and biomedical simulations moving ahead. So this.
+
+14
+00:01:56.390 --> 00:02:18.029
+Sarthak Madaan: so in this advanced project, our project was divided into 2 main parts. 1st was to have the literature review of the paper, to have the basic idea and the groundwork running that which can be efficient for our project. And what other things can we explore? And the second half of the project was focused on the testing and exploring the Repository and performing
+
+15
+00:02:18.190 --> 00:02:25.400
+Sarthak Madaan: code implementation and working on the Thomas Miller algorithm. So moving ahead with our 1st
+
+16
+00:02:25.610 --> 00:02:54.310
+Sarthak Madaan: paper, which was which we explored, was 3D data with progressive compression and refinement. So this paper presents usage of intricate massive 3D. Data, and how to reduce the computational overhead while maintaining the accurate results. So this paper uses Ppvp, which is progressing, protruding vertex pruning, which remove the protruding vertexes which are out of bound, making the surface more smooth.
+
+17
+00:02:54.310 --> 00:02:59.900
+Sarthak Madaan: which give them more refined results, which are which are faster in computation.
+
+18
+00:03:00.130 --> 00:03:08.879
+Sarthak Madaan: and this also shows how this can be implemented in CPU Gpu. They haven't done Gpu, though, but they have shown that it can be implemented. Moving to the next paper.
+
+19
+00:03:09.390 --> 00:03:19.639
+Sarthak Madaan: which is a fast triangle triangle intersection test for collision detection which presents a noble algebraic triangled intersection approach
+
+20
+00:03:19.720 --> 00:03:43.529
+Sarthak Madaan: so this quickly checks. If the triangle axis aligned, bound, boxing, intersect, if they don't, the triangle cannot intersect, it uses plane based test and edge based test to have a more refined and optimized result. The algorithm basically optimizes calculation by reducing the redundant arithmetic operation and leveraging geometric properties which makes it faster than many existing methods.
+
+21
+00:03:44.290 --> 00:03:57.930
+Sarthak Madaan: So, moving to the next paper, which is a simple and robust approach to computation of measures, intersections. This paper presents a robust and efficient method for detecting and repairing intersections in 3D. Space.
+
+22
+00:03:58.760 --> 00:04:20.399
+Sarthak Madaan: So the paper deals with detecting and repairing intersection and complex 3D. Measures which ensures high geometric accuracy and stability without changing the original input data. The paper presents a unique approach for working efficiently with floating arithmetic points which helps in avoiding complex arbitrary precision methods and preserving original data.
+
+23
+00:04:20.690 --> 00:04:43.819
+Sarthak Madaan: moving ahead with our next paper, which is real time spatial registration for 3D. Human atlas. The ticket framework delivers a real time spatial registration for 3D blocked issues. This shows how usage of multi-level indexing and voxelization based method help to handle complex queries in the 3D space
+
+24
+00:04:43.820 --> 00:05:10.619
+Sarthak Madaan: and and the mesh quality in mesh quality assurance. So basically preprocesses and repairs the meshes to ensure a reliable intersection and calculation without altering the original data, and also shows parallel computing, openmp and parallel voxel checks to achieve the substantial speeds. The showcases have been in scalability, accuracy, and Hpc. Inter
+
+25
+00:05:11.100 --> 00:05:16.479
+Sarthak Madaan: integration and in in biomedical domain. Moving ahead with our next paper.
+
+26
+00:05:16.800 --> 00:05:22.940
+Sarthak Madaan: which is parallel, Gpu accelerated adaptive mesh refinement for 3D. Phase field
+
+27
+00:05:23.170 --> 00:05:47.770
+Sarthak Madaan: simulation of dendrick growth during solidification of binary alloy. So why we took this paper, we wanted to more explore around Gpus, how Gpu level can leverage the faster optimization and the faster results. So this paper shows and presents Gpu accelerated adaptive mesh refinement strategy that significantly enhances the efficiency and the stability.
+
+28
+00:05:47.900 --> 00:06:04.490
+Sarthak Madaan: Now adaptive computation which integrates adaptive mesh refinement to focus process on critical regions. So it's basically a little bit on geometric. I think so. Gpu acceleration. It leverages multi gpu parallelization which speeds up their results
+
+29
+00:06:04.840 --> 00:06:15.790
+Sarthak Madaan: and distributes workloads evenly across the gpus which maintains high efficiency which we are also trying to achieve. So that's how it resonates with our project
+
+30
+00:06:16.730 --> 00:06:18.839
+Sarthak Madaan: moving to the next paper.
+
+31
+00:06:19.380 --> 00:06:35.760
+Sarthak Madaan: So full speed ahead. 3D spatial database acceleration with Gpus. So this paper presents how a Gpu accelerated engine integrated with post. Gre. SQL. Achieved a dramatic speed up to 3,000 times for 3D. Spatial queries.
+
+32
+00:06:36.050 --> 00:06:37.889
+Sarthak Madaan: 3D. Acceleration for
+
+33
+00:06:38.010 --> 00:07:06.109
+Sarthak Madaan: for 3D. Data to demonstrate that offloading complex. 3D spatial queries to Gpu can yield up to 3,000 time performance improvements over CPU based methods. So which is a very significant and very optimized result, database integration. A Gpu engine with the post Gre SQL, for example, via foreign data wrappers streamlining the query process and maintaining it with a familiar relational database environment.
+
+34
+00:07:06.830 --> 00:07:19.409
+Sarthak Madaan: So, moving ahead with the next paper, the paper that we are trying to implement is a fast triangle triangle intersection test which uses Thomas Mueller. So now this paper presents a very robust and non
+
+35
+00:07:19.460 --> 00:07:38.070
+Sarthak Madaan: non-brute force algorithm to quickly determine if 2 triangle intersect a critical advancement for an efficient collision detection which uses early rejection test by checking which side of the plane triangle vertices lie on, reducing unnecessary computation
+
+36
+00:07:38.270 --> 00:07:49.569
+Sarthak Madaan: which converts the problem to an interval overlap test by projecting vertices onto the intersection line. If it doesn't, then it just simply rejects simplifying the intersection check.
+
+37
+00:07:50.970 --> 00:08:03.420
+Sarthak Madaan: Now, moving to the next paper. So this paper is very interesting because it's not just Thomas Mueller that can help us. There are 2 more algorithms which this paper has explored, which are
+
+38
+00:08:03.700 --> 00:08:08.649
+Sarthak Madaan: developers and Juji's algorithm. So basically.
+
+39
+00:08:09.260 --> 00:08:25.300
+Sarthak Madaan: So this paper compare all the 3 with Gpu accelerated triangle triangle intersection algorithm. The 2 stage approach 1st uses aabs bbs to quickly cull and non-interse, non-intersecting pairs.
+
+40
+00:08:25.920 --> 00:08:26.990
+Sarthak Madaan: No.
+
+41
+00:08:27.490 --> 00:08:48.149
+Sarthak Madaan: the basically method that mueller algorithm uses is it reduces the problem of triangle triangle intersection to a simpler geometric test like determining the intersection of line segments and planes. So if I talk in terms of reliability, it serves as a reliable baseline, because it's clear logic and consistent results.
+
+42
+00:08:48.230 --> 00:09:10.740
+Sarthak Madaan: On the other hand, the developers and Julie's algorithm, it relies on evaluating predicates, determined to determine intersections without constructing intermediate geometric entities, and it's basically best suited for application requiring high performance. Use real time, 3D collision data. Both of them are needed for collision detection.
+
+43
+00:09:11.150 --> 00:09:17.775
+Sarthak Madaan: So to dive more into Thomas Mueller on our implementation. Now Shreyas will walk you through
+
+44
+00:09:18.610 --> 00:09:25.590
+Shreyas Habade: So now let's start with the latter half of our presentation, which shows what actually we have done in our advanced project.
+
+45
+00:09:28.520 --> 00:09:50.110
+Shreyas Habade: So, as it is mentioned over here that Miola's algorithm is not for its conceptual simplicity, but we used a refined version known as a Miola Trumbo algorithm. So we developed a function called the intersex triangle. So what this actually means is like, let's say there are 2 triangles. So 2 triangles has 6 vertices as well as 6 ages.
+
+46
+00:09:50.220 --> 00:10:13.379
+Shreyas Habade: so each edge of each triangle is considered as a ray, and it is calculated whether that one ray is intersecting the other triangle like this. So if any one of the 6 ages shows the intersection, it is termed as the both triangles intersect, so within this there is also one concept of coplanarative shaking. So.
+
+47
+00:10:13.690 --> 00:10:38.219
+Shreyas Habade: whether the rays are coplanar or not, we, we calculate the determinant value of it, and and we set a epsilon value that is a tolerance level of it. So if the difference between those 2 rays is less than a tolerance level, we say that those 2 rays are coplanar, and they don't intersect, and whether it is more than that they will eventually intersect. So in
+
+48
+00:10:38.390 --> 00:10:42.059
+Shreyas Habade: so later, we also check whether the dependent value is
+
+49
+00:10:42.220 --> 00:10:53.990
+Shreyas Habade: less than 0 or more than one. So ideally, the determinant value should lie between 0 and one. If it is out of bounds. It is said that the intersection is happening out of triangle, which is imaginary.
+
+50
+00:10:54.240 --> 00:10:59.110
+Shreyas Habade: So we avoid that. So we focus on the intersection happening between the bounds of 0 to one.
+
+51
+00:10:59.550 --> 00:11:06.470
+Shreyas Habade: So there's 2 concepts are known as the intersection ray, intersection and edge ray casting.
+
+52
+00:11:07.070 --> 00:11:34.490
+Shreyas Habade: So with more optimization, we use the bounding box test to eliminate computations which can which definitely do not intersect. So we 1st do a bounding box test. We calculate the minimums and the maximum boundaries of each triangle within the 3 dimensional coordinates. So if and like, set up a boundary bounding box with it, if those boxes don't intersect, we don't even have to compute the intersections to it.
+
+53
+00:11:35.160 --> 00:12:03.149
+Shreyas Habade: Later we set the floating point tolerances we use rather than the float. We use the double data type, which is more accurate and provides more decimals to it, and helps in the calculations, though it takes a bit of more time for the calculation, like for computation, but it shows more accurate results than float. So we use the epsilon value, which was set to one e versus minus 12, as a tolerance, which is very, very small, so within that tolerance it is calculated.
+
+54
+00:12:04.910 --> 00:12:23.889
+Shreyas Habade: So first, st we had to look into the earlier repository, which we found many discrepancies that code wasn't working well, even though triangles had intersected or not intersected. The code still used to give the result, as triangles are intersected and the code used to terminate early. So we weren't sure about how the code was working, but
+
+55
+00:12:23.890 --> 00:12:35.019
+Shreyas Habade: we did try to fix the code, but it we couldn't find it. There were many discrepancies that there was floating pointer issues and everything. So rather than fixing it, we tried. We made a new code by scratch.
+
+56
+00:12:35.270 --> 00:12:42.659
+Shreyas Habade: So we used Mueller term work. We optimized with Mbbs check. And we use high percent data types and incident values.
+
+57
+00:12:43.080 --> 00:12:58.719
+Shreyas Habade: So the 1st we made the code for a CPU version of it which we run a CPU and get the results. Later, we converted that code for Gpu optimization which requires to launch a cuda kernel for it which is determined by the global tag of it
+
+58
+00:12:58.920 --> 00:13:08.369
+Shreyas Habade: which which you apply to the function, and we have to load all the inbuilt functions or the supportive functions of the code to the device, whatever it is the code or the Gpu.
+
+59
+00:13:08.580 --> 00:13:09.510
+Shreyas Habade: That's it.
+
+60
+00:13:10.090 --> 00:13:13.609
+Shreyas Habade: So to do that, to launch a kernel first, st we have to
+
+61
+00:13:13.760 --> 00:13:29.119
+Shreyas Habade: take the dimension of the block, the dimension of the grid, and how many threads are available in each gpu. Let's say the sea will cluster. We have a different architecture, and the one is which is on. The colab has a different architecture and different threads, so we have to take those
+
+62
+00:13:29.380 --> 00:13:37.749
+Shreyas Habade: parameters of it, calculate how much memory we have. We are requiring how much memory we we require for the of sorry
+
+63
+00:13:38.000 --> 00:13:55.319
+Shreyas Habade: for the of files to store, and how big our mesh is, how many triangles we have. So, according to those parameters, we give or allocate main magif to the cuda kernel, using a cuda malloc and cuda meme copy functions to allocate and transfer data from device to the Qda kernel and launch it.
+
+64
+00:13:56.140 --> 00:14:13.520
+Shreyas Habade: So later, we also use thread synchronization because, as multiple threads are launched, parallelly to check intersection found a 1 single global flag is set to check intersection. And if it's set through all the intersections or all the computations are terminated because you have already found intersection and no need to go ahead.
+
+65
+00:14:15.880 --> 00:14:16.780
+Shreyas Habade: So
+
+66
+00:14:17.330 --> 00:14:39.519
+Shreyas Habade: we monitored all the performances. We check multiple times. And these are the results. What we got. So let's say we tried for multiple mesh sizes and say there is a model, a model B which is comparable in size, but their triangles are mesh size, less than 3,000 triangles. So all this times are shown in seconds. So we tested it on colab on the same architecture.
+
+67
+00:14:39.840 --> 00:15:01.929
+Shreyas Habade: so we can say that for mesh sizes of 3,000 triangles. The time taken was around 4.8 seconds, and on the Gpu it was quite less 0 point 0 7 seconds, which is very fast, but that is still comparable, because within 2 or 3 seconds you get the same results. But as the mesh size increases, the difference between
+
+68
+00:15:02.090 --> 00:15:12.829
+Shreyas Habade: those times increases exponentially. So it graph is exponential for changing. So you can say, the mesh size for 3 k. To 7 k. Is about time taken to see for 21 seconds, and
+
+69
+00:15:12.890 --> 00:15:35.190
+Shreyas Habade: for Gpu it's just 0 point 1 second for 10,000 measures. It's 37, or 38 seconds, and for Gpus 0 point 3. So definitely, we can say that Gpu or the computations, if you're very, very, very accelerated. And thus we say that the project is very feasible for using Gpus for multiple database optimizations which which has special data in it.
+
+70
+00:15:35.590 --> 00:15:47.270
+Shreyas Habade: So for future scope, we see is that for bigger measures we. We calculated this times using the interpolation techniques with the previously acquired data so reducing that we can say.
+
+71
+00:15:47.540 --> 00:16:03.329
+Shreyas Habade: you can show that the message still 10,000 will take around 54 seconds on CPU, while that on the Gpu is 0 point 4 5 for 50 K. Meshes, 89 point for Gpu, 0 point 8 seconds for 100 k. Meshes. It's a very, very large model, you can say.
+
+72
+00:16:03.540 --> 00:16:10.019
+Shreyas Habade: although not that large sum has millions, but times, you can say is like more close to 3 min.
+
+73
+00:16:10.310 --> 00:16:25.580
+Shreyas Habade: 2, 3 min, and for the Gpu is just 1.5 seconds. So definitely, if we are dealing with mesh sizes in millions, so computing them on Gpu is very feasible, and it it gives, requires a very, very less time and gives very faster results.
+
+74
+00:16:26.210 --> 00:16:38.450
+Shreyas Habade: So these were the references for the literature. We would take the 8 papers we have studied, and using this, some subparts of the each paper is taken into our implementation like the bounding boxes. So we find
+
+75
+00:16:38.660 --> 00:16:43.819
+Shreyas Habade: part of Muolev's algorithm that the motive muolevor and everything.
+
+76
+00:16:44.120 --> 00:16:45.040
+Shreyas Habade: Thank you.
+
+77
+00:16:48.080 --> 00:16:50.440
+Lu Chen: Thank you. Shreya.
+
+78
+00:16:50.440 --> 00:16:54.010
+Sarthak Madaan: If you have any questions for us, we are happy to answer.
+
+79
+00:16:54.420 --> 00:17:00.740
+Lu Chen: Yeah, you did a really great job. So I have several
+
+80
+00:17:00.900 --> 00:17:14.910
+Lu Chen: first, st several suggestions. So can you add the authors and conference or journal, and year to the papers in your references.
+
+81
+00:17:16.220 --> 00:17:17.969
+Sarthak Madaan: Okay, we will definitely add.
+
+82
+00:17:19.470 --> 00:17:25.479
+Sarthak Madaan: and we'll mention the year I think year. We haven't. But we'll mention the year.
+
+83
+00:17:27.160 --> 00:17:33.869
+Lu Chen: Yeah, you should mention the conferences or journals for the for all these papers.
+
+84
+00:17:33.870 --> 00:17:34.550
+Sarthak Madaan: Okay.
+
+85
+00:17:38.120 --> 00:17:50.400
+Lu Chen: yeah. And for the second part. So should I ask, can you introduce the configurations for for the CPU or Gpu experiments?
+
+86
+00:17:50.830 --> 00:17:51.900
+Sarthak Madaan: Can you repeat?
+
+87
+00:17:53.060 --> 00:17:54.979
+Lu Chen: The configurations so.
+
+88
+00:17:54.980 --> 00:18:04.760
+Sarthak Madaan: Okay. So I will mention the configurations that they were tested on the Gpu provided by the Google Collab, which is T. 4 Gpu. Which.
+
+89
+00:18:05.450 --> 00:18:08.250
+Sarthak Madaan: but that is not used that much.
+
+90
+00:18:08.400 --> 00:18:13.629
+Sarthak Madaan: But as the mesh size will increase the definitely, the amount of memory used will be increased.
+
+91
+00:18:15.623 --> 00:18:24.090
+Lu Chen: So can you repeat what types or what kind of Gpu Google for the Google Collab?
+
+92
+00:18:26.800 --> 00:18:29.910
+Lu Chen: Oh, I cannot hear you.
+
+93
+00:18:35.540 --> 00:18:40.620
+Shreyas Habade: So the Google colab uses the T 4 tensor Gpu.
+
+94
+00:18:40.620 --> 00:18:42.230
+Lu Chen: T, 4, 1070. P. Okay.
+
+95
+00:18:42.230 --> 00:18:45.460
+Shreyas Habade: Here, and CPU is Intel Xeon.
+
+96
+00:18:46.420 --> 00:18:47.280
+Lu Chen: Intels.
+
+97
+00:18:47.450 --> 00:18:54.729
+Shreyas Habade: I will, I will dive more into it, and search how many threads it has! What is a core memory? What is the cache memory of it, and definitely let you know.
+
+98
+00:18:55.760 --> 00:19:01.319
+Lu Chen: Okay, thank you. So I also have a question about the
+
+99
+00:19:01.720 --> 00:19:07.160
+Lu Chen: A code. So where is the code? So repository or.
+
+100
+00:19:07.160 --> 00:19:23.829
+Shreyas Habade: Yeah, I've pushed into the repository, made a new branch as a development Shrjt, which is my username. And I've pushed the code into it. So it is actually an Jupyter notebook file, which has both. The sections are the CPU code as well as the Gpu code. In it.
+
+101
+00:19:24.180 --> 00:19:25.764
+Lu Chen: Yeah, so can you
+
+102
+00:19:26.160 --> 00:19:27.360
+Shreyas Habade: Sure I will show you here.
+
+103
+00:19:27.697 --> 00:19:30.060
+Lu Chen: Yeah, yeah, you can show me. So.
+
+104
+00:20:02.610 --> 00:20:06.480
+Shreyas Habade: So. Yes, as you can see, this is main branch, and this is my branch.
+
+105
+00:20:10.380 --> 00:20:11.300
+Lu Chen: Okay.
+
+106
+00:20:11.300 --> 00:20:23.140
+Shreyas Habade: So I have pushed, like all my implementations, which were the unrefined ones as well, which I was like trying to fix the bugs in the previous code, the new ones. So this is the
+
+107
+00:20:23.880 --> 00:20:26.739
+Shreyas Habade: latest file which has everything in it.
+
+108
+00:20:27.970 --> 00:20:30.210
+Shreyas Habade: This is the Ipnb file.
+
+109
+00:20:33.260 --> 00:20:35.700
+Shreyas Habade: so it has just a CPU code in it.
+
+110
+00:20:37.260 --> 00:20:45.970
+Shreyas Habade: which shows the time taken for break measures was 37 38 seconds, and this was the Gpu compatible code, the Q dot code we charge.
+
+111
+00:20:46.080 --> 00:20:49.590
+Shreyas Habade: So all the helper functions are loaded, using the device
+
+112
+00:20:49.690 --> 00:20:59.279
+Shreyas Habade: tab and the main cuda kernel which you have to launch like how much memory we have to take and allocate to it. It is defined by the global
+
+113
+00:20:59.970 --> 00:21:00.929
+Shreyas Habade: tag, for it.
+
+114
+00:21:01.340 --> 00:21:06.839
+Lu Chen: So Jupyter notebook can run c plus plus code.
+
+115
+00:21:06.840 --> 00:21:11.180
+Shreyas Habade: Yes, it can run c plus plus code, because it has a few amazing yeah.
+
+116
+00:21:11.496 --> 00:21:14.340
+Shreyas Habade: there are like, you have to 1st install the
+
+117
+00:21:14.500 --> 00:21:19.699
+Shreyas Habade: cuda toolkit on it if it is not already there. And there is a special tag right
+
+118
+00:21:19.860 --> 00:21:22.380
+Shreyas Habade: percent, percent, right file you have to use.
+
+119
+00:21:22.550 --> 00:21:31.110
+Shreyas Habade: And you can save your file, as let's say, my name was New 3 dot Cpp. So you have to save that file, using that.
+
+120
+00:21:31.350 --> 00:21:32.610
+Shreyas Habade: and you have to
+
+121
+00:21:32.870 --> 00:21:56.980
+Shreyas Habade: again it like how you compile it on the CPU use G plus plus CPU dash? Or is the new file and the new Exe file names? We just have to put an exclamation mark, denoting that this is a C plus plus file for every command which involves C plus, plus. We have to put exclamation, mark per it. And then, as usual, we can say just to run the exe file of this
+
+122
+00:21:57.340 --> 00:22:02.810
+Shreyas Habade: dot slash nutri, and it runs for cuda. There's a different
+
+123
+00:22:04.390 --> 00:22:06.369
+Shreyas Habade: like, you can say a different
+
+124
+00:22:07.150 --> 00:22:18.580
+Shreyas Habade: command for it. Sorry? Come on. So. You have to mention same as it is, so we save the C plus plus files as Cpp cuda files you have to save as.cu.
+
+125
+00:22:20.980 --> 00:22:27.000
+Shreyas Habade: Well, it is the same. You have to compile it and kind of on it in colab.
+
+126
+00:22:27.000 --> 00:22:32.781
+Lu Chen: Awesome. I learned something new. I don't know before.
+
+127
+00:22:37.770 --> 00:22:39.700
+Shreyas Habade: Any more questions on the side.
+
+128
+00:22:41.192 --> 00:22:47.409
+Lu Chen: I think we can discuss more when and one
+
+129
+00:22:48.300 --> 00:22:52.219
+Lu Chen: before the start of the next semester.
+
+130
+00:22:52.220 --> 00:22:53.640
+Shreyas Habade: Okay, that's sweet.
+
+131
+00:22:56.340 --> 00:23:01.770
+Lu Chen: I have no questions, so do you have any questions for me?
+
+132
+00:23:02.125 --> 00:23:15.260
+Shreyas Habade: Like, as we discussed the definite feasibility of this project. So what really the next targets, and currently what we what at what stage. We stand right now, and what at? Till what we have to reach.
+
+133
+00:23:17.000 --> 00:23:26.880
+Lu Chen: Yeah. Actually, I think the Gpu implementation is not as fast as
+
+134
+00:23:29.740 --> 00:23:38.440
+Lu Chen: as as I thought before, because in your table.
+
+135
+00:23:38.920 --> 00:23:43.230
+Lu Chen: So can you show the table.
+
+136
+00:23:43.420 --> 00:23:44.650
+Shreyas Habade: Yeah, okay.
+
+137
+00:23:51.920 --> 00:23:54.110
+Shreyas Habade: yeah. So these are the results.
+
+138
+00:23:54.770 --> 00:24:06.959
+Shreyas Habade: Again, these are the actual results we got on it. But these are the future which is just interpolation. The actual results might be much, much better. But these are like calculated mathematically use interpolation techniques.
+
+139
+00:24:08.020 --> 00:24:09.630
+Shreyas Habade: So like
+
+140
+00:24:09.890 --> 00:24:25.090
+Shreyas Habade: for 100 k mesh, I mean, most of the measures will be in millions also for human anatomy, so that will be easily within 2 or 3 seconds, and in much faster way, like we can use our trees or octaries for dividing the measures plus we can use
+
+141
+00:24:25.240 --> 00:24:35.959
+Shreyas Habade: mesh compilation techniques like proturing pruning. So let's say, there is a football. We can say so. Football we can shape into an octagonal patches and reduce the
+
+142
+00:24:36.170 --> 00:24:43.539
+Shreyas Habade: dimensional complexity of the object, and we can approximate it and store it in a variable in the layer wise way.
+
+143
+00:24:43.690 --> 00:24:53.119
+Shreyas Habade: So we let's say we have a pentagon, and there's a many triangles between it, so we can remove 5 triangles, and put one pentagon pentagon, so it reduces the
+
+144
+00:24:53.470 --> 00:25:02.159
+Shreyas Habade: edges, it reduces the word prices, and thus overall, it reduces the computation complexity of it. So, instead of calculating fog
+
+145
+00:25:02.280 --> 00:25:07.570
+Shreyas Habade: by triangles you have to just compute for one pentagon, which is much more easier.
+
+146
+00:25:07.760 --> 00:25:18.919
+Shreyas Habade: So using that techniques as well, computation time is reduced drastically, and hence I feel due to that in that Ibm paper they were able to achieve 3,000 times the
+
+147
+00:25:19.190 --> 00:25:21.750
+Shreyas Habade: past execution. But, as we can see.
+
+148
+00:25:22.330 --> 00:25:32.530
+Shreyas Habade: we can literally show it is almost 1 50 times faster. But using this techniques, we can reach up to 3,000, and as the mesh size increases the
+
+149
+00:25:32.720 --> 00:25:41.350
+Shreyas Habade: difference between these time will increase drastically, exponentially. So I think it is way easier to achieve 3, even 2,000 times acceleration.
+
+150
+00:25:42.340 --> 00:25:51.880
+Lu Chen: Yeah, so that these are the next steps. What? You said, yeah, what you said on the next steps, we can
+
+151
+00:25:52.180 --> 00:26:02.939
+Lu Chen: absolutely optimized using spatial, indexing, or like compression. As you said.
+
+152
+00:26:03.930 --> 00:26:08.329
+Lu Chen: so we can try different methods and combine
+
+153
+00:26:08.450 --> 00:26:14.720
+Lu Chen: some of them, maybe all of them, or some of them, to achieve a better performance.
+
+154
+00:26:15.500 --> 00:26:17.210
+Shreyas Habade: Yes, we'll definitely do it.
+
+155
+00:26:21.100 --> 00:26:22.839
+Lu Chen: Okay, so.
+
+156
+00:26:23.840 --> 00:26:25.680
+Shreyas Habade: I wanted to ask one more thing.
+
+157
+00:26:25.680 --> 00:26:26.310
+Lu Chen: Okay.
+
+158
+00:26:26.310 --> 00:26:34.560
+Shreyas Habade: Is like, can we publish a paper regarding this? What will be the efforts required and the target to achieve this thing.
+
+159
+00:26:35.180 --> 00:26:36.230
+Lu Chen: In depth.
+
+160
+00:26:37.760 --> 00:26:48.162
+Lu Chen: Yeah, definitely, I think, if you can write a paper or we can let let me
+
+161
+00:26:49.980 --> 00:26:54.130
+Shreyas Habade: Yes, I'm like, I'm quite interested in publishing at one paper.
+
+162
+00:26:54.320 --> 00:27:06.370
+Lu Chen: Yeah. So if you think you did something novel. And the algorithm or the optimization I
+
+163
+00:27:06.880 --> 00:27:17.499
+Lu Chen: you implemented are better than all the state of arts algorithms. We can write a paper together.
+
+164
+00:27:20.390 --> 00:27:25.189
+Lu Chen: So are you busy for the next semester
+
+165
+00:27:25.390 --> 00:27:27.809
+Lu Chen: to write a paper on the.
+
+166
+00:27:28.310 --> 00:27:31.069
+Shreyas Habade: Yeah, I'm available to do that work.
+
+167
+00:27:31.090 --> 00:27:32.749
+Lu Chen: Okay, so that's that's.
+
+168
+00:27:33.541 --> 00:27:37.500
+Shreyas Habade: We actually are sitting together.
+
+169
+00:27:38.760 --> 00:27:42.630
+Sarthak Madaan: So there is a voice coherence, and one has to go on mute.
+
+170
+00:27:43.256 --> 00:27:45.760
+Lu Chen: Yeah, you can share.
+
+171
+00:27:45.760 --> 00:27:47.290
+Sarthak Madaan: Yes, yes.
+
+172
+00:27:48.170 --> 00:28:02.110
+Sarthak Madaan: So that's why one has to go on mute if other one is speaking so we can't speak. So yeah, we are actually quite interested in publishing a paper, and that's we are hoping to work on that as as and start. Also, I mentioned that it is a very interesting project, and
+
+173
+00:28:02.110 --> 00:28:25.379
+Sarthak Madaan: with all the literature papers also, we saw that how much this field has scope. So we want to explore further, and we would really want to publish a paper, if that is feasible. And as we saw the results, what we got, and our future scope, as you can see on the screen that this is the minimum expectation that we have from the results. So what we, we will obviously have more optimized. But this is the bare minimum threshold that we have set up, that
+
+174
+00:28:25.380 --> 00:28:27.039
+Sarthak Madaan: this we will be able to achieve.
+
+175
+00:28:27.040 --> 00:28:36.200
+Sarthak Madaan: So that's what we are interested in. And if feasible, we will really like to have a paper. What do you think about? What's your take on that.
+
+176
+00:28:36.530 --> 00:28:46.800
+Lu Chen: Yeah, I think. If you want to write a paper or publish a paper, it may take a lot of time to
+
+177
+00:28:48.080 --> 00:28:51.139
+Lu Chen: write a decent paper, you know.
+
+178
+00:28:51.650 --> 00:28:52.390
+Sarthak Madaan: Yes.
+
+179
+00:28:54.070 --> 00:29:05.110
+Lu Chen: Okay? So I can share with you some templates for a conference for some conferences like
+
+180
+00:29:05.880 --> 00:29:11.299
+Lu Chen: 6 facial or Vldb, yeah, or big data.
+
+181
+00:29:11.660 --> 00:29:14.820
+Lu Chen: So we can target paper on
+
+182
+00:29:15.626 --> 00:29:24.099
+Lu Chen: like, I triple E big data or what you want to what you like.
+
+183
+00:29:24.940 --> 00:29:27.500
+Shreyas Habade: Yeah, the spatial data works, I mean.
+
+184
+00:29:27.780 --> 00:29:37.640
+Shreyas Habade: And also one thing, if you are attending any conferences to this like spatial data or database, please also let us know we are quite interested in attending with you.
+
+185
+00:29:38.260 --> 00:29:53.120
+Lu Chen: Okay, thank you so much. You are so hardworking. You are the most hard working students I've ever met. Yeah, so we can have more more meetings next semester, because.
+
+186
+00:29:53.120 --> 00:29:53.920
+Shreyas Habade: Yeah, definitely.
+
+187
+00:29:53.920 --> 00:29:56.540
+Lu Chen: We will write a paper together.
+
+188
+00:29:57.530 --> 00:29:58.320
+Shreyas Habade: Thank you.
+
+189
+00:29:58.630 --> 00:30:00.259
+Shreyas Habade: Thank you. Thank you so much.
+
+190
+00:30:02.000 --> 00:30:08.800
+Lu Chen: One more question it's regarding our advanced project, too. So are we good to register for it? Or is there anything there.
+
+191
+00:30:08.910 --> 00:30:10.329
+Sarthak Madaan: We need to wait for.
+
+192
+00:30:11.310 --> 00:30:16.920
+Lu Chen: Okay? Yeah. Actually, I I.
+
+193
+00:30:17.850 --> 00:30:23.890
+Lu Chen: So Dr. Wang is attending a conference in DC,
+
+194
+00:30:24.370 --> 00:30:29.189
+Lu Chen: right now. So can you register? Or do you need the permission from him.
+
+195
+00:30:29.884 --> 00:30:36.870
+Sarthak Madaan: We can register. We just need to inform him that we are registering like last time. Yeah.
+
+196
+00:30:37.170 --> 00:30:45.889
+Lu Chen: Okay, I I will. Yeah. So next steps for me are 1st to
+
+197
+00:30:46.668 --> 00:30:53.230
+Lu Chen: send also. So you should share the recording with me so for this Zoom Meeting.
+
+198
+00:30:53.780 --> 00:30:58.719
+Lu Chen: and then I will share it with Dr. Wang.
+
+199
+00:30:59.060 --> 00:31:14.889
+Lu Chen: and I will suggest your score to him, and and then, I will tell him.
+
+200
+00:31:15.930 --> 00:31:22.039
+Lu Chen: Inform him that you well, you registered the advanced project, too.
+
+201
+00:31:23.870 --> 00:31:25.550
+Lu Chen: Any other.
+
+202
+00:31:25.550 --> 00:31:32.260
+Shreyas Habade: Okay, that works. I mean, just a formal. You can put a mail to him and put us in a CC. Like last time, letting that.
+
+203
+00:31:32.620 --> 00:31:33.240
+Lu Chen: Yes.
+
+204
+00:31:33.240 --> 00:31:37.220
+Shreyas Habade: Students are registering for the next semester's. I don't push it as well.
+
+205
+00:31:38.040 --> 00:31:43.310
+Lu Chen: Yes, and it's important to discuss the paper with him.
+
+206
+00:31:43.860 --> 00:31:44.360
+Shreyas Habade: Yes.
+
+207
+00:31:44.360 --> 00:31:53.030
+Lu Chen: Yeah, so we can schedule a meeting sometime in the future, like next month.
+
+208
+00:31:55.170 --> 00:31:55.890
+Sarthak Madaan: Sure.
+
+209
+00:31:58.020 --> 00:31:59.370
+Lu Chen: Thank you.
+
+210
+00:31:59.370 --> 00:32:04.969
+Sarthak Madaan: Yeah, thank you, Luchan. I hope we met your expectations. We did. Our work was satisfactory.
+
+211
+00:32:05.230 --> 00:32:10.700
+Lu Chen: Yeah, you you are beyond my expectation. Thank you.
+
+212
+00:32:11.090 --> 00:32:13.410
+Sarthak Madaan: Thank you so much that has made our day.
+
+213
+00:32:14.030 --> 00:32:15.780
+Shreyas Habade: Thank you. Have a nice day.
+
+214
+00:32:16.300 --> 00:32:17.109
+Shreyas Habade: Have a good day.
+
+215
+00:32:17.110 --> 00:32:18.270
+Lu Chen: Bye.
+
+216
+00:32:18.440 --> 00:32:20.000
+Sarthak Madaan: Happy New Year.
+
+217
+00:32:20.000 --> 00:32:21.072
+Lu Chen: Happy New Year.
+
