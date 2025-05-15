@@ -1,11 +1,11 @@
 ```markdown
-# 🔺 GPU-Accelerated Triangle-Triangle Intersection
+#  GPU-Accelerated Triangle-Triangle Intersection
 
 This project performs GPU-based triangle-triangle intersection testing between neuroimaging meshes (e.g., brain surfaces) and whole-body meshes using CUDA. It's designed for **high-throughput collision detection**, especially in **neuroscience simulation and validation tasks**.
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 
@@ -24,11 +24,11 @@ saivaibhavkondapaka\_ap\_gpu/
 
 ---
 
-## 🚀 How to Compile
+##  How to Compile
 
 Make sure you have CUDA installed (e.g., with `nvcc` available).
 
-### ✅ Steps
+###  Steps
 
 ```bash
 cd saivaibhavkondapaka_ap_gpu/src
@@ -42,7 +42,7 @@ nvcc -O3 -std=c++17 -gencode arch=compute_86,code=sm_86 \
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 Run the compiled program from the `build` folder:
 
@@ -51,13 +51,13 @@ cd ../build
 ./sai_tri_gpu ../meshes/MeshA.off ../meshes/MeshB.off 1000000
 ```
 
-### 📌 Parameters
+###  Parameters
 
 * `MeshA.off`: Path to first mesh file
 * `MeshB.off`: Path to second mesh file
 * `1000000`: Batch size (controls how many triangle-pairs are processed at a time)
 
-### 📌 Example
+###  Example
 
 ```bash
 ./sai_tri_gpu ../meshes/VH_F_skin.off ../meshes/VH_F_skin.off 1000000
@@ -65,13 +65,13 @@ cd ../build
 
 ---
 
-## 📤 Output Format
+##  Output Format
 
 ```
 <ExecutionTime_ms>    <Mpairs/s>    <Intersect_Flag>    <Intersection_Count>
 ```
 
-### 📌 Example Output
+###  Example Output
 
 ```
 7163.54    20438.7    1    3664085
@@ -84,7 +84,7 @@ cd ../build
 
 ---
 
-## 🧪 Batch Testing Script (Optional)
+##  Batch Testing Script (Optional)
 
 You can run batch tests using `run_inter_mesh.sh`:
 
@@ -96,7 +96,7 @@ It loops through mesh pairs and appends results to a `.tsv` file.
 
 ---
 
-## 📊 Benchmarking Results
+##  Benchmarking Results
 
 Result files like `vh_skin_vs_skin_results.tsv` or `inter_mesh_results.tsv` contain:
 
@@ -106,7 +106,7 @@ Result files like `vh_skin_vs_skin_results.tsv` or `inter_mesh_results.tsv` cont
 
 ---
 
-## 📦 Mesh Format (.OFF)
+##  Mesh Format (.OFF)
 
 Each `.off` file contains:
 
@@ -119,7 +119,7 @@ x y z           # vertex lines
 
 ---
 
-## 📌 Features
+##  Features
 
 * Supports large-scale triangle pairs (e.g., >300M pairs)
 * Batch-based GPU processing to prevent memory overflow
@@ -131,7 +131,7 @@ x y z           # vertex lines
 
 ---
 
-## 🧠 Future Optimizations
+##  Future Optimizations
 
 | Idea                                 | Benefit                                       |
 | ------------------------------------ | --------------------------------------------- |
@@ -143,7 +143,7 @@ x y z           # vertex lines
 
 ---
 
-## 👨💻 Author
+##  Author
 
 **Sai Vaibhav Kondapaka**
 GPU Mesh Collision | CUDA Geometry | Allen Brain Atlas & VH Mesh
