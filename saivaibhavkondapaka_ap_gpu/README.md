@@ -3,6 +3,21 @@
 
 This project performs GPU-based triangle-triangle intersection testing between neuroimaging meshes (e.g., brain surfaces) and whole-body meshes using CUDA. It's designed for **high-throughput collision detection**, especially in **neuroscience simulation and validation tasks**.
 
+## Folder Structure
+
+````
+saivaibhavkondapaka_ap_gpu/  
+├── src/  
+│ └── sai_tri_intersect_gpu.cu # CUDA source code with triangle-triangle intersection logic  
+├── build/  
+│ ├── sai_tri_gpu # Compiled binary (generated after build)  
+│ └── *.tsv # Benchmark result files  
+├── meshes/  
+│ └── *.off # Input 3D mesh files (OFF format)  
+├── run_inter_mesh.sh # Script to batch process mesh pairs  
+└── README.md  
+
+````
 
 ##  How to Compile
 
