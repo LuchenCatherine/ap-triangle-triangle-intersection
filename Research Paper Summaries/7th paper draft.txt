@@ -1,0 +1,243 @@
+The paper "A Fast Triangle-Triangle Intersection Test" by Tomas Möller introduces an efficient method for determining whether two triangles intersect. The method is designed for applications in collision detection algorithms, which are essential in computer graphics, physics simulations, and virtual reality.
+
+Problem Statement
+Collision detection algorithms rely heavily on checking intersections between geometric primitives, such as triangles. Many algorithms, including OBBTree, sphere hierarchies, and BV-trees, attempt to minimize the number of primitive-primitive intersection tests. However, even with such optimizations, a fast and reliable method for performing the triangle-triangle intersection test is crucial due to the widespread use of triangles in rendering hardware and geometric computations.
+
+The problem statement that this paper addresses is:
+
+How can we efficiently and reliably determine if two triangles intersect in 3D space without resorting to brute-force methods that are computationally expensive?
+The Algorithm
+The algorithm for triangle-triangle intersection presented in the paper involves the following steps:
+
+Compute Plane Equations:
+
+For each triangle, compute the plane equation in which it lies.
+For triangle 
+𝑇
+2
+T 
+2
+​
+ , compute the plane normal 
+𝑁
+2
+N 
+2
+​
+  and the plane equation 
+𝜋
+2
+π 
+2
+​
+  using:
+𝑁
+2
+=
+(
+𝑉
+2
+1
+−
+𝑉
+2
+0
+)
+×
+(
+𝑉
+2
+2
+−
+𝑉
+2
+0
+)
+,
+𝑑
+2
+=
+−
+𝑁
+2
+⋅
+𝑉
+2
+0
+N 
+2
+​
+ =(V 
+2
+1
+​
+ −V 
+2
+0
+​
+ )×(V 
+2
+2
+​
+ −V 
+2
+0
+​
+ ),d 
+2
+​
+ =−N 
+2
+​
+ ⋅V 
+2
+0
+​
+ 
+Early Rejection Test:
+
+Calculate the signed distances of 
+𝑇
+1
+T 
+1
+​
+ 's vertices to the plane 
+𝜋
+2
+π 
+2
+​
+ .
+If all vertices of 
+𝑇
+1
+T 
+1
+​
+  are on the same side of 
+𝜋
+2
+π 
+2
+​
+ , reject the intersection.
+Perform the same test for 
+𝑇
+2
+T 
+2
+​
+  with respect to the plane of 
+𝑇
+1
+T 
+1
+​
+ .
+Intersection Line Calculation:
+
+If early rejection tests fail, compute the line of intersection 
+𝐿
+L between the planes 
+𝜋
+1
+π 
+1
+​
+  and 
+𝜋
+2
+π 
+2
+​
+ .
+The direction of 
+𝐿
+L is given by 
+𝐷
+=
+𝑁
+1
+×
+𝑁
+2
+D=N 
+1
+​
+ ×N 
+2
+​
+ .
+Projection onto the Intersection Line:
+
+Project the vertices of both triangles onto 
+𝐿
+L to obtain scalar intervals.
+For 
+𝑇
+1
+T 
+1
+​
+ , compute:
+𝑝
+𝑉
+1
+𝑖
+=
+𝐷
+⋅
+(
+𝑉
+1
+𝑖
+−
+𝑂
+)
+p 
+V 
+1
+i
+​
+ 
+​
+ =D⋅(V 
+1
+i
+​
+ −O)
+where 
+𝑂
+O is a point on 
+𝐿
+L.
+Interval Overlap Test:
+
+Compute the intervals for each triangle along 
+𝐿
+L.
+If the intervals overlap, the triangles intersect.
+Co-Planar Case:
+
+If the triangles are co-planar, project them onto the axis-aligned plane where their areas are maximized and perform a 2D intersection test.
+Key Contributions
+Efficient Intersection Test:
+
+The paper presents a method that avoids brute-force edge-to-edge checks by leveraging early rejection tests and geometric properties.
+Optimizations:
+
+Simplified calculations by eliminating the need to compute certain points explicitly.
+Projecting onto the dominant coordinate axis for numerical stability.
+Robustness:
+
+Introduces a tolerance constant 
+𝜖
+ϵ to handle near co-planar cases, enhancing the reliability of the method.
+Performance Benchmarking:
+
+The method is shown to be 7% faster compared to the ERIT method in some scenarios, especially when the number of potential collisions is high.
+Practical Applications:
+
+Applicable in real-time collision detection systems for graphics, VR platforms, and physics engines where performance is critical.
+This paper provides a solid foundation for efficient triangle-triangle intersection testing, improving the overall performance of collision detection algorithms in computational geometry and graphics applications.

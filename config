@@ -1,0 +1,15 @@
+# Read more about SSH config files: https://linux.die.net/man/5/ssh_config
+Host bmidb0
+    HostName bmidb0.cs.stonybrook.edu
+    User apgpu
+    PubkeyAuthentication yes
+    IdentityFile C:/Users/shabade/.ssh/id_ed25519
+    Port 130
+
+Host bmidb8
+    User shreyas
+    HostName 130.245.130.224
+    PubkeyAuthentication yes
+    IdentityFile C:/Users/shabade/.ssh/id_ed25519
+    ProxyCommand ssh -q -W %h:%p bmidb0
+    Port 130
